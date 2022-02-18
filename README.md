@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AhmedEssam243
 - 👀 I’m interested in Software Engineering Interships
-- 🌱 I’m currently learning back-end coding with Python
+- 🌱 I’m currently learning coding with Java
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me this is my twitter handle (a7MeDeSsAm23)
 
