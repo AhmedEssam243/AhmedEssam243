@@ -1,0 +1,52 @@
+package EECS1021;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+                                     // Generating the numbers
+        int number = 1 + (int)(16 * Math.random());
+
+                                    // Number of trials given
+        int N = 10;
+                                    // guessing variable
+        int i, guess;
+
+        System.out.println("A number is chosen" + " between 1 to 500." + "Guess the number" + " within 10 trials.");
+
+                                    // N Trials
+        for (i = 0; i < N; i++) {
+
+            System.out.println("Guess the number:");
+            guess = sc.nextInt();
+
+                                    // If the number is guessed
+            if (number == guess) {
+                System.out.println(
+                        "Congratulations! You have guessed the number.");
+                break;
+            }
+                                    //If the guessed number is greater
+            else if (number > guess && i != N - 1) {
+                System.out.println("The number is greater than " + guess);
+            }
+                                    // If the guessed number is lesser
+            else if (number < guess
+                    && i != N - 1) {
+                System.out.println(
+                        "The number is less than " + guess);
+            }
+        }
+
+        if (i == N) {
+            System.out.println("You have Used all of your trials.");
+
+            System.out.println("The right number was " + number);
+
+            System.out.println("Try Again");
+        }
+    }
+
+}
