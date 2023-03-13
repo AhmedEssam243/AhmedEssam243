@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang='e'>
+
+<head>
+<title> BattleShip Game </title>
+</head>
+
+<body>
+
+<p> Guess BattleShip coordinates </p>
+
+<script>
+
+    var randomnum = Math.floor(Math.random() * 7) ;
+var Location1 = randomnum ;
+var Location2 = randomnum + 1 ;
+var location3 = randomnum + 2 ;
+var hits = 0;
+var guess;
+var guesses = 0;
+var issunk = false;
+var responsee;
+
+
+while (issunk == false) {
+    guess = prompt("Aim , Fire! (Enter a location between 0-6):");
+    if (guess < 0 || guess > 6) {
+        issunk = false
+        alert("Enter a valid Coordinates Input")
+        guess = prompt("Aim , Fire! (Enter a location between 0-6):");
+    } else {
+        alert("You MISSED!")
+        guesses = guesses + 1;
+    }
+    if (guess == Location1 || guess == Location2 || guess == location3) {
+        hits = hits + 1
+        alert("hit!!!")
+        alert("You have found the Location of the ship"+ "" + "you're total number of hits is " + hits )
+    }
+    if (hits == 3) {
+        issunk = true;
+        alert("you have sank the battleship!!")
+        alert("you're total number of hits is " + hits )
+    }
+}
+
+var states = "you're" + "shooting" + "accuracy is" + (3 / guesses);
+alert(states)
+
+responsee = prompt("is it true that you want to play again? True or false??");
+
+if(responsee == true){
+    issunk == false
+}
+else {
+    issunk == false
+    document.write("Thank you for playing")
+}
+
+</script>
+</body>
+
+</html>
