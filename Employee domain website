@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>AEDI(Ahmeds Employees Benefits and Domain Info)</title>
+</head>
+
+<style>
+    /* Page Background */
+
+    body {
+        background-image: url("tim-stief-YFFGkE3y4F8-unsplash.jpg");
+        background-size: 1880px;
+
+    }
+
+
+
+    /*Navigation Bar*/
+    ul{
+        list-style-type: none;
+           margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #282a35;
+
+                                             }
+
+    li {
+        float: left;
+    }
+
+    li a{
+        display: block;
+        color: white;
+        padding: 5px;
+        text-overline-color: #fd2e4a;
+        background-color: #282a35;
+        text-decoration: none;
+        text-align: center;
+    }
+    li a:hover {
+        background-color: #fd2e4a;
+    }
+
+</style>
+
+
+<body>
+
+
+      <script type="text/javascript" src="Javascript1.js"></script>
+      <img src="logoo.jpg" alt="Company Logo" width="190" height="152">
+
+      <ul>
+         <li><a href="#home"id="home">Home</a></li>
+          <li><a href="#Register New Employee"id="Register New Employee">Register New Employee</a></li>
+          <li><a href="#Login-Signout"id="Login-Signout">Login-Signout</a></li>
+          <li><a href="#Login-Signout"id="Employee-PunchIn">Employee-PunchIn</a></li>
+          <button <li><a href="#Admin"id="Admin">Admin</a></li> </button>
+          <li><a href="#Contact-Linkedin"id="Contact-Linkedin">Contact-Linkedin</a></li>
+      </ul>
+
+          <script type="text/javascript">
+
+
+              const Navigationbar = {
+
+
+                  document.getElementById("home").onclick = function Homebutton() {
+                      location.href = "http://localhost:63342/EmployeesDomainInfo/MainHtml.html?_ijt=h5jqhfg8tinli062tmkgma3fiu&_ij_reload=RELOAD_ON_SAVE";
+                  }
+
+                  document.getElementById("Contact-Linkedin").onclick = function contactbutton() {
+                      location.href = "https://www.linkedin.com/in/ahmed-abdelazim-067a45171/";
+                  }
+                  document.getElementById("Register New Employee").onclick = function RegisterNewbutton() {
+                      location.href = "http://localhost:63342/EmployeesDomainInfo/Register%20New%20Employee.html?_ijt=96u4eajft6nhm27f2j4tu4c8eu&_ij_reload=RELOAD_ON_SAVE";
+                  }
+                  document.getElementById("Admin").onclick = function Adminbutton() {
+                      location.href = "http://localhost:63342/EmployeesDomainInfo/AdminPage.html?_ijt=s79m11u4r6ji59kgf1a023o3hm&_ij_reload=RELOAD_ON_SAVE";
+                  }
+              }
+
+
+
+
+
+
+
+
+
+
+
+          </script>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
